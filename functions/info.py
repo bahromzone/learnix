@@ -1,8 +1,8 @@
 from fastapi import HTTPException
 from sqlalchemy import update, delete
-from models.info import Info
+from models.information import Info
 from models.students import Students
-from utils.db_operations import save_in_db, get_in_db
+from utils.db_control import save_in_db, get_in_db
 from sqlalchemy.future import select
 
 async def get_info(student_id, db, user):

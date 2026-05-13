@@ -1,9 +1,9 @@
 from fastapi import HTTPException
 from sqlalchemy import select
-from models.attendances import Attendance
+from models.presences import Attendance
 from models.courses import Groups
 from models.students import Students
-from utils.db_operations import save_in_db
+from utils.db_control import save_in_db
 from sqlalchemy.orm import joinedload
 
 

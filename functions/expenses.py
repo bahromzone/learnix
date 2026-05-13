@@ -1,6 +1,6 @@
 from fastapi import HTTPException
-from utils.db_operations import save_in_db, get_in_db
-from models.expenses import Expenses
+from utils.db_control import save_in_db, get_in_db
+from models.expenditures import Expenses
 from sqlalchemy import update, delete
 from sqlalchemy.future import select
 from sqlalchemy.sql import func, extract, and_

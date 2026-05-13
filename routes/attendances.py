@@ -1,11 +1,11 @@
 from datetime import date
 from sqlalchemy.ext.asyncio import AsyncSession
 from db import get_database
-from functions.attendances import get_attendance_for_teacher, create_attendance, update_attendance, delete_attendance, \
+from functions.presences import get_attendance_for_teacher, create_attendance, update_attendance, delete_attendance, \
     get_attendance_for_admin, get_student_attendance_stats
 from fastapi import APIRouter, Depends, HTTPException
 from routes.auth import get_current_active_user
-from schemas.attendances import CreateAttendance, UpdateAttendance
+from schemas.presences import CreateAttendance, UpdateAttendance
 from schemas.users import CreateUser
 
 attendance_router = APIRouter(

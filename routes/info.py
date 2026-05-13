@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from db import get_database
-from functions.info import get_info, update_info, create_info, delete_info
+from functions.information import get_info, update_info, create_info, delete_info
 from routes.auth import get_current_active_user
 from schemas.info import SchemaInfo
 from schemas.users import CreateUser

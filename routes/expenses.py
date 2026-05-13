@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 from db import get_database
-from functions.expenses import create_expense, update_expense, delete_expense, get_all_expense, get_sum_expense
+from functions.expenditures import create_expense, update_expense, delete_expense, get_all_expense, get_sum_expense
 from routes.auth import get_current_active_user
-from schemas.expenses import CreateExpense, UpdateExpense
+from schemas.expenditures import CreateExpense, UpdateExpense
 from schemas.users import CreateUser
 from datetime import date
 
