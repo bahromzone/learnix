@@ -6,7 +6,7 @@ from schemas.instructors import InstructorProfile
 
 # Ommaviy (public) router - auth talab qilinmaydi
 instructor_router = APIRouter(
-    prefix="/instructors",
+    prefix="/api/instructors",
     tags=["Instructor public profile"]
 )
 
