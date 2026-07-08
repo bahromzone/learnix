@@ -8,10 +8,9 @@ from routes.payments import payment_router
 from routes.reception import reception_router
 from routes.expenses import expense_router
 from routes.info import info_router
-
+from routes.instructors import instructor_router
 
 api = APIRouter()
-
 
 api.include_router(reception_router)
 api.include_router(attendance_router)
@@ -23,4 +22,5 @@ api.include_router(course_router)
 api.include_router(group_router)
 api.include_router(admistrator_router)
 api.include_router(user_router)
+api.include_router(instructor_router)
 api.include_router(login_router)
